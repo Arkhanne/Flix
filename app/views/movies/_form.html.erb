@@ -8,8 +8,7 @@
     <%= f.text_area :description, cols: 40, rows: 7 %>
   </p>
   <p>
-    <%= f.label :rating %><br/>
-    <%= f.text_field :rating, size: 4 %>
+    <%= f.select :rating, Movie::RATINGS, prompt: "Pick one" %><br/>
   </p>
   <p>
     <%= f.label :released_on %><br/>
